@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/userName"
+        style="@style/Base.TextAppearance.AppCompat"
+        android:layout_width="337dp"
+        android:layout_height="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/userPicture"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="dude name" />
+
+    <ImageView
+        android:id="@+id/userPicture"
+        android:layout_width="47dp"
+        android:layout_height="47dp" />
+
+    <ImageView
+        android:id="@+id/foodPicture"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/userName"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/foodPicture"
+        android:numStars="5"
+        android:rating="2"
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:layout_marginLeft="-50dp"
+        android:layout_marginRight="-50dp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="243dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/foodPicture"
+        android:layout_toEndOf="@+id/ratingBar"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:paddingTop="10dp"
+        android:text="food item" />
+
+    <TextView
+        android:id="@+id/storeName"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ratingBar"
+        android:paddingTop="5dp"
+        android:text="Store Name" />
+
+    <TextView
+        android:id="@+id/staticAtSymbol"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/storeName"
+        android:layout_alignParentStart="true"
+        android:text="\@"
+        android:textAlignment="center" />
+</RelativeLayout>
